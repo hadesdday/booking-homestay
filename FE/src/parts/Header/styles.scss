@@ -1,0 +1,80 @@
+@import "../../settings";
+
+.btn {
+  &__signin {
+    border: none;
+    margin-right: 5px;
+    color: $main-color;
+  }
+
+  &__create__account {
+    border: 1px solid $main-color;
+    &:hover {
+      color: #fff;
+      background-color: $main-color;
+    }
+  }
+
+  &__register__rental {
+    border: 1px solid $pink-color;
+    color: $pink-color;
+    padding: 10px;
+    transition: all ease-in-out 0.25s;
+    border-radius: 5px;
+    margin-right: 1em;
+
+    &:hover {
+      color: #fff;
+      background-color: $pink-color;
+    }
+  }
+
+  &__create__account,
+  &__signin {
+    padding: 10px;
+    transition: all ease-in-out 0.25s;
+    border-radius: 5px;
+
+    &:hover {
+      background-color: $main-color;
+      color: #fff !important;
+    }
+  }
+
+  &__cart {
+    margin-right: 2em;
+    margin-top: 5px;
+  }
+}
+
+.nav-link {
+  transition: all ease-in-out 0.25s;
+  color: #000;
+  &:hover {
+    color: $main-color !important;
+  }
+}
+
+.ico__cart {
+  font-size: 190%;
+  color: #000;
+}
+
+.profile__parent {
+  position: relative;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.profile__content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.profile__parent:hover .profile__content {
+  display: block;
+}
